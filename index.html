@@ -133,14 +133,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/monstrvk2.loader.js'
+                    unityLoader.src = 'Build/monstrvk.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/monstrvk2.data.unityweb',
-                                frameworkUrl: 'Build/monstrvk2.framework.js.unityweb',
-                                codeUrl: 'Build/monstrvk2.wasm.unityweb',
+                                dataUrl: 'Build/monstrvk.data.unityweb',
+                                frameworkUrl: 'Build/monstrvk.framework.js.unityweb',
+                                codeUrl: 'Build/monstrvk.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'Space MonstrTRuck',
